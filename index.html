@@ -194,7 +194,7 @@
     </a>
 </p>
 
-```html
+
 <h2>6. User Consent and Google User Messaging Platform (UMP)</h2>
 
 <p>
@@ -265,14 +265,26 @@
     These local settings and history are used to provide application functionality and are not maintained in a PDF PowerKit cloud account.
 </p>
 
-<h2>8. Temporary and output files</h2>
+
+<h3>Generated File History</h3>
 
 <p>
-    PDF PowerKit can create temporary files during document processing and camera scanning. For camera scanning, the project creates temporary JPEG files in the application's cache directory. The application also creates output files in Android's Downloads collection for many document operations.
+    PDF PowerKit may maintain a limited history of files generated through
+    its features. The history is limited to a maximum of 20 entries.
 </p>
 
 <p>
-    Deleting an in-app history record does not necessarily delete every copy of a document that you may have saved elsewhere. Where the app provides a delete-generated-file action, that action attempts to delete the referenced generated file. You remain responsible for managing copies of files stored in locations under your control.
+    A history entry may contain the generated file name, the PDF PowerKit
+    feature used to create the file, the Android file URI associated with
+    the generated file, and the date and time the file was created.
+</p>
+
+<p>
+    The history entry does not contain a second copy of the generated PDF
+    or document. Deleting an entry from PDF PowerKit's history does not
+    necessarily delete the actual file from your device. The actual file
+    remains subject to the storage location and file-management actions
+    available through Android.
 </p>
 
 <h2>9. Contact and support messages</h2>
