@@ -123,53 +123,77 @@
     Processing performed by Google-provided components is subject to the technical behavior and applicable privacy terms of those services.
 </p>
 
-<h2>5. Advertising (Google Mobile Ads SDK)</h2>
+```html
+<h2>5. Advertising and Google Mobile Ads</h2>
 
 <p>
-    PDF PowerKit displays banner advertisements using the Google Mobile Ads SDK for Android. The project currently references Google Mobile Ads SDK version <strong>25.5.0</strong>.
+    PDF PowerKit uses the Google Mobile Ads SDK (AdMob) to display advertisements.
+    The version of the Google Mobile Ads SDK used by the app is documented in the
+    app's current build configuration.
 </p>
 
 <p>
-    According to Google's documentation, the Mobile Ads SDK may collect and share information such as:
+    Depending on the device, app configuration, consent choices, and applicable
+    privacy requirements, Google Mobile Ads may collect and process certain
+    information, including:
 </p>
 
 <ul>
-    <li>Device or other IDs (for example, Advertising ID and device identifiers)</li>
-    <li>IP address</li>
-    <li>IP address, which may be used to estimate the general location of a device.</li>
-    <li>App activity related to advertising (for example, ad impressions, clicks, and in-app events</li>
-    <li>App info and performance data (for example, crash logs and diagnostics)</li>
-    <li>Device and app information such as device model, operating system version, and app version</li>
-</ul>
-
-<p>
-    This information may be used for advertising, analytics, fraud prevention, and security. Google states that data collected by the Mobile Ads SDK is encrypted in transit using TLS.
-</p>
-
-<p>
-    PDF PowerKit does not intentionally send the contents of your PDFs, images, or Word documents to the Mobile Ads SDK for the purpose of displaying advertisements. Google may process advertising-related information according to its own policies and the user's available privacy choices.
-</p>
-
-<p>
-    For more information, see:
-</p>
-<ul>
     <li>
-        <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">
-            Google Privacy Policy
-        </a>
+        <strong>IP address</strong>, which may be used to estimate the general
+        location of a device.
     </li>
     <li>
-        <a href="https://developers.google.com/admob/android/privacy/play-data-disclosure" target="_blank" rel="noopener">
-            Google Mobile Ads data disclosure for Google Play
-        </a>
+        <strong>Device or other identifiers.</strong>
     </li>
     <li>
-        <a href="https://support.google.com/admob/answer/10113106" target="_blank" rel="noopener">
-            AdMob: Add a privacy policy URL
-        </a>
+        <strong>App activity</strong>, such as ad impressions, clicks, and
+        related interactions.
+    </li>
+    <li>
+        <strong>Diagnostics and performance information</strong>, such as crash
+        and performance data.
     </li>
 </ul>
+
+<p>
+    This information may be used for advertising, analytics, fraud prevention,
+    security, and related service operations. The specific data collected and
+    processing purposes may vary depending on Google's services, your device,
+    your consent choices, and applicable privacy requirements.
+</p>
+
+<p>
+    PDF PowerKit does not intentionally send the contents of your PDF documents
+    to Google Mobile Ads for advertising purposes.
+</p>
+
+<p>
+    Advertising data may be transmitted using appropriate security measures,
+    including encryption in transit such as TLS, where supported by the
+    applicable service.
+</p>
+
+<p>
+    For more information about how Google handles information in connection
+    with advertising services, please review Google's privacy information and
+    the Google Mobile Ads documentation linked below.
+</p>
+
+<p>
+    <a href="https://policies.google.com/privacy" target="_blank"
+       rel="noopener noreferrer">
+        Google Privacy Policy
+    </a>
+</p>
+
+<p>
+    <a href="https://support.google.com/admob/answer/6128543" target="_blank"
+       rel="noopener noreferrer">
+        Google AdMob Privacy and Data Disclosure Information
+    </a>
+</p>
+```
 
 <h2>6. Advertising consent (Google UMP SDK)</h2>
 
