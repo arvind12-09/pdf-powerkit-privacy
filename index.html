@@ -1,374 +1,79 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <title>Privacy Policy – PDF PowerKit</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <style>
-        body {
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-            line-height: 1.6;
-            max-width: 800px;
-            margin: 40px auto;
-            padding: 0 16px;
-            color: #222;
-            background: #fafafa;
-        }
-        h1, h2, h3 {
-            margin-top: 1.5em;
-            margin-bottom: 0.5em;
-        }
-        p {
-            margin: 0.8em 0;
-        }
-        ul, ol {
-            margin: 0.5em 0;
-            padding-left: 1.2em;
-        }
-        a {
-            color: #1a73e8;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        code {
-            background: #f0f0f0;
-            padding: 2px 4px;
-            border-radius: 3px;
-            font-size: 0.95em;
-        }
-        .meta {
-            font-size: 0.95em;
-            color: #555;
-        }
-    </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Privacy Policy for PDF PowerKit Android application.">
+<meta name="robots" content="index,follow">
+<title>Privacy Policy – PDF PowerKit</title>
+<style>
+:root{--ink:#202633;--muted:#5c6675;--brand:#2457c5;--line:#e3e8f0;--surface:#f6f8fc}
+*{box-sizing:border-box} html{scroll-behavior:smooth}
+body{margin:0;background:var(--surface);color:var(--ink);font:16px/1.72 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+header{background:linear-gradient(135deg,#173b87,#2865d5);color:white;padding:46px 20px}
+.header-inner,main,footer{max-width:900px;margin-left:auto;margin-right:auto}
+header h1{font-size:clamp(2rem,5vw,2.8rem);line-height:1.15;margin:0 0 8px}
+header p{margin:4px 0;color:#e7edff}
+main{margin-top:28px;margin-bottom:36px;padding:38px clamp(20px,5vw,54px);background:white;border:1px solid var(--line);border-radius:16px;box-shadow:0 8px 30px rgba(20,39,77,.06)}
+h2{margin:2.1em 0 .55em;padding-bottom:.35em;border-bottom:1px solid var(--line);font-size:1.35rem;line-height:1.35}
+h3{margin:1.4em 0 .4em;font-size:1.08rem} p{margin:.7em 0} ul{padding-left:1.5rem} li{margin:.35em 0}
+a{color:var(--brand);text-underline-offset:3px;overflow-wrap:anywhere}
+.meta,.toc{margin:22px 0;padding:16px 18px;background:#f3f6fc;border:1px solid var(--line);border-radius:10px}
+.meta{display:flex;flex-wrap:wrap;gap:8px 24px} .meta span{color:var(--muted)}
+.toc h2{margin:0 0 8px;padding:0;border:0;font-size:1.1rem} .toc ol{columns:2;column-gap:34px;margin:8px 0 0;padding-left:1.3rem} .toc li{break-inside:avoid;margin:4px 0}
+.notice{margin:20px 0;padding:15px 18px;border-left:4px solid #d28a19;background:#fff8e9;border-radius:6px}
+footer{padding:0 20px 30px;color:var(--muted);font-size:.9rem;text-align:center}
+@media(max-width:620px){main{margin:14px 10px 24px;padding:25px 20px}header{padding:34px 20px}.toc ol{columns:1}}
+@media print{body{background:white}header{background:white;color:black;padding:0 0 20px}header p{color:#333}main{margin:0;padding:0;border:0;box-shadow:none}.toc{display:none}a{color:black}}
+</style>
 </head>
 <body>
-
-<h1>Privacy Policy – PDF PowerKit</h1>
-
-<p class="meta">
-    <strong>Effective date:</strong> September 20, 2026<br />
-    <strong>App:</strong> PDF PowerKit<br />
-    <strong>Developer/Publisher:</strong> Arvind Kumar<br />
-    <strong>Privacy contact:</strong> arvind.mns18@gmail.com
-</p>
-
-<p>
-    This Privacy Policy explains how PDF PowerKit handles information when you use the Android application.
-</p>
-
-<h2>1. What the app does</h2>
-
-<p>
-    PDF PowerKit is a document utility app that provides features including PDF creation, editing, conversion, scanning, compression, merging, splitting, page management, protection, unlocking, redaction, OCR, signatures, watermarks, and related document operations.
-</p>
-
-<p>
-    The app does not require a user account and does not operate a developer-controlled server or database for storing user documents.
-</p>
-
-<h2>2. Files you select or create</h2>
-
-<p>
-    You may choose PDFs, images, Word documents, and other supported files for processing.
-</p>
-
-<p>
-    The application normally accesses files only when you select them through Android's file/document interfaces or when you create/save output files.
-</p>
-
-<p>
-    The application is designed to perform its document-processing operations locally on the Android device. It does not intentionally upload the contents of your selected PDFs, images, or Word documents to a PDF PowerKit server.
-</p>
-
-<p>
-    Generated documents can be saved to locations such as Android's Downloads collection. Once a file has been saved there, it is under your control through Android's file-management facilities.
-</p>
-
-<h2>3. Camera and scanning</h2>
-
-<p>
-    PDF PowerKit requests the Android <code>CAMERA</code> permission for camera-based scanning features.
-</p>
-
-<p>
-    CameraX is used to capture images for scanning. The source code stores captured camera images temporarily in the application's cache while processing is performed.
-</p>
-
-<p>
-    Camera access is used for the requested scanning functionality. PDF PowerKit does not use the camera for advertising.
-</p>
-
-<h2>4. OCR and document scanning (Google ML Kit)</h2>
-
-<p>
-    PDF PowerKit includes Google ML Kit text-recognition libraries, including Latin and Devanagari text recognition.
-</p>
-
-<p>
-    The OCR implementation reads a selected or captured image and passes it to the on-device ML Kit text-recognition API. The image is processed locally on the device and is not intentionally uploaded to a PDF PowerKit server. Temporary cached images are deleted after processing where the relevant operation completes.
-</p>
-
-<p>
-    The text-recognition libraries included by this project are bundled ML Kit libraries. Google's documentation describes ML Kit's on-device APIs as running on the device and supporting offline operation. The app does not operate its own OCR server.
-</p>
-
-<p>
-    PDF PowerKit also uses Google's ML Kit Document Scanner through Google Play services. The scanner is used to provide document-scanning functionality and can produce PDF/JPEG results for the application. The application does not operate its own server for storing scanned documents.
-</p>
-
-<p>
-    Processing performed by Google-provided components is subject to the technical behavior and applicable privacy terms of those services.
-</p>
-
-
-<h2>5. Advertising and Google Mobile Ads</h2>
-
-<p>
-    PDF PowerKit uses the Google Mobile Ads SDK (AdMob) to display advertisements.
-    The version of the Google Mobile Ads SDK used by the app is documented in the
-    app's current build configuration.
-</p>
-
-<p>
-    Depending on the device, app configuration, consent choices, and applicable
-    privacy requirements, Google Mobile Ads may collect and process certain
-    information, including:
-</p>
-
-<ul>
-    <li>
-        <strong>IP address</strong>, which may be used to estimate the general
-        location of a device.
-    </li>
-    <li>
-        <strong>Device or other identifiers.</strong>
-    </li>
-    <li>
-        <strong>App activity</strong>, such as ad impressions, clicks, and
-        related interactions.
-    </li>
-    <li>
-        <strong>Diagnostics and performance information</strong>, such as crash
-        and performance data.
-    </li>
-</ul>
-
-<p>
-    This information may be used for advertising, analytics, fraud prevention,
-    security, and related service operations. The specific data collected and
-    processing purposes may vary depending on Google's services, your device,
-    your consent choices, and applicable privacy requirements.
-</p>
-
-<p>
-    PDF PowerKit does not intentionally send the contents of your PDF documents
-    to Google Mobile Ads for advertising purposes.
-</p>
-
-<p>
-    Advertising data may be transmitted using appropriate security measures,
-    including encryption in transit such as TLS, where supported by the
-    applicable service.
-</p>
-
-<p>
-    For more information about how Google handles information in connection
-    with advertising services, please review Google's privacy information and
-    the Google Mobile Ads documentation linked below.
-</p>
-
-<p>
-    <a href="https://policies.google.com/privacy" target="_blank"
-       rel="noopener noreferrer">
-        Google Privacy Policy
-    </a>
-</p>
-
-<p>
-    <a href="https://support.google.com/admob/answer/6128543" target="_blank"
-       rel="noopener noreferrer">
-        Google AdMob Privacy and Data Disclosure Information
-    </a>
-</p>
-
-
-<h2>6. User Consent and Google User Messaging Platform (UMP)</h2>
-
-<p>
-    PDF PowerKit uses Google's User Messaging Platform (UMP) to manage
-    privacy and consent choices for advertising where required by applicable
-    laws and regulations.
-</p>
-
-<p>
-    When required, the app may display a consent form before requesting
-    advertising-related services. The information and choices presented in
-    the consent form can vary depending on your location, applicable privacy
-    requirements, Google's consent configuration, and the advertising services
-    available to the app.
-</p>
-
-<p>
-    Where applicable, you can review or change your advertising privacy
-    choices through the <strong>Advertising Privacy</strong> option in the
-    app's Settings. This option may open Google's privacy-options form when
-    Google determines that such an option is required or available for your
-    circumstances.
-</p>
-
-<p>
-    Your consent or privacy choices do not affect the basic ability to use
-    PDF PowerKit's core PDF and document features.
-</p>
-
-<p>
-    For additional information about Google's approach to privacy and
-    advertising consent, you can review:
-</p>
-
-<ul>
-    <li>
-        <a href="https://www.google.com/about/company/user-consent-policy/"
-           target="_blank" rel="noopener noreferrer">
-            Google EU User Consent Policy
-        </a>
-    </li>
-    <li>
-        <a href="https://support.google.com/admob/answer/10113207"
-           target="_blank" rel="noopener noreferrer">
-            Google AdMob and GDPR information
-        </a>
-    </li>
-</ul>
-
-
-<h2>7. Local settings and history</h2>
-
-<p>
-    The app stores certain settings locally on the device, including settings such as:
-</p>
-<ul>
-    <li>Selected theme and language</li>
-    <li>Consent status for advertising</li>
-    <li>Scanner and other feature preferences</li>
-    <li>Other user choices required for app functionality</li>
-</ul>
-
-<p>
-    The generated-file history is limited to 20 entries and stores metadata such as the generated file name, feature name, file URI, and creation time. It does not store a second copy of the PDF in the history database.
-</p>
-
-<p>
-    These local settings and history are used to provide application functionality and are not maintained in a PDF PowerKit cloud account.
-</p>
-
-
-<h3>Generated File History</h3>
-
-<p>
-    PDF PowerKit may maintain a limited history of files generated through
-    its features. The history is limited to a maximum of 200 entries.
-</p>
-
-<p>
-    A history entry may contain the generated file name, the PDF PowerKit
-    feature used to create the file, the Android file URI associated with
-    the generated file, and the date and time the file was created.
-</p>
-
-<p>
-    The history entry does not contain a second copy of the generated PDF
-    or document. Deleting an entry from PDF PowerKit's history does not
-    necessarily delete the actual file from your device. The actual file
-    remains subject to the storage location and file-management actions
-    available through Android.
-</p>
-
-<h2>8. Contact and support messages</h2>
-
-<p>
-    The app provides a contact/report-problem action that opens an email composer. If you voluntarily contact the developer, the developer may receive the information contained in your email, including your email address and whatever information you choose to provide.
-</p>
-
-<p>
-    Please do not include passwords, payment information, or unnecessary sensitive information in a support message.
-</p>
-
-<h2>9. No developer-controlled accounts or document cloud</h2>
-
-<p>
-    PDF PowerKit does not operate its own account system, advertising server, document cloud, or backend database. PDF PowerKit does not intentionally sell your documents.
-</p>
-
-<p>
-    However, third-party services integrated into the application may independently process information necessary to provide their services. The principal services identified in the current project include:
-</p>
-<ul>
-    <li>Google Mobile Ads SDK – for displaying advertisements</li>
-    <li>Google User Messaging Platform (UMP) SDK – for advertising consent and privacy choices</li>
-    <li>Google ML Kit Text Recognition – for OCR</li>
-    <li>Google ML Kit Document Scanner via Google Play services – for document scanning</li>
-</ul>
-
-<p>
-    Third-party services are governed by their own applicable terms and privacy practices.
-</p>
-
-<h2>10. Security</h2>
-
-<p>
-    PDF PowerKit uses Android application and file-access security mechanisms. Google states that information collected by the Google Mobile Ads SDK is encrypted in transit using TLS.
-</p>
-
-<p>
-    No application, device, storage system, or transmission method can be guaranteed to be completely secure. You should maintain backups of important documents and avoid processing files on a device you do not trust.
-</p>
-
-<h2>11. Data retention and deletion</h2>
-
-<p>
-    PDF PowerKit does not maintain a developer-operated user account containing your documents. Files saved by the application can remain on your device or in a user-selected storage location until you delete or move them.
-</p>
-
-<p>
-    Temporary files are deleted by relevant processing code where applicable, and Android may remove application cache according to its normal behavior. Local preferences and history can be removed by clearing application data or by using the relevant controls provided by the application. Generated documents stored in Downloads are separate files and may need to be deleted separately.
-</p>
-
-<p>
-    Third-party services may retain information according to their own policies and legal obligations.
-</p>
-
-<h2>12. Children's privacy</h2>
-
-<p>
-    PDF PowerKit is not specifically designed as a child-directed application. The app does not require children to create an account or provide personal information to use its core PDF tools. The developer does not knowingly request children to provide personal information through the application.
-</p>
-
-<p>
-    If you believe a child has provided personal information directly to the developer, contact the developer at the address below.
-</p>
-
-<h2>13. Changes to this policy</h2>
-
-<p>
-    PDF PowerKit uses third-party software and services. Their policies can change independently of this application. Relevant information can be found in the official documentation and policies of Google and the open-source projects listed in the application's third-party notices.
-</p>
-
-<p>
-    This Privacy Policy may be updated when the app's functionality, third-party services, data practices, or legal requirements change. The effective date at the top of this policy identifies the current version.
-</p>
-
-<h2>14. Contact</h2>
-
-<p>
-    For privacy questions or concerns:
-</p>
-<p>
-    <strong>Email:</strong> arvind.mns18@gmail.com
-</p>
-
-</body>
-</html>
+<header><div class="header-inner"><h1>Privacy Policy</h1><p>PDF PowerKit – Android application</p><p>Information about how the application handles information and documents.</p></div></header>
+<main>
+<div class="meta"><div><strong>Effective date:</strong> <span>13 November 2026</span></div><div><strong>Privacy contact:</strong> <a href="mailto:arvind.mns18@gmail.com">arvind.mns18@gmail.com</a></div></div>
+<p>This Privacy Policy explains how PDF PowerKit handles information when you install or use the application. Please read it carefully, particularly the sections about advertising, the Private Vault, Android backups, and third-party services.</p>
+<nav class="toc" aria-label="Table of contents"><h2>Contents</h2><ol><li><a href="#section-1">1. About PDF PowerKit</a></li>
+<li><a href="#section-2">2. Files you select, process, or create</a></li>
+<li><a href="#section-3">3. Camera and document scanning</a></li>
+<li><a href="#section-4">4. OCR and text recognition</a></li>
+<li><a href="#section-5">5. Advertising and Google Mobile Ads</a></li>
+<li><a href="#section-6">6. Advertising consent and privacy choices</a></li>
+<li><a href="#section-7">7. Local settings and generated-file history</a></li>
+<li><a href="#section-8">8. Private Vault</a></li>
+<li><a href="#section-9">9. Android backups and device transfers</a></li>
+<li><a href="#section-10">10. YouTube tutorials and embedded videos</a></li>
+<li><a href="#section-11">11. Google Play services and in-app updates</a></li>
+<li><a href="#section-12">12. Sharing files with other applications</a></li>
+<li><a href="#section-13">13. Contact and support messages</a></li>
+<li><a href="#section-14">14. Information sharing and disclosure</a></li>
+<li><a href="#section-15">15. Data retention and deletion</a></li>
+<li><a href="#section-16">16. Data security</a></li>
+<li><a href="#section-17">17. Your privacy rights and requests</a></li>
+<li><a href="#section-18">18. Children&#x27;s privacy</a></li>
+<li><a href="#section-19">19. Third-party software and open-source components</a></li>
+<li><a href="#section-20">20. Changes to this Privacy Policy</a></li>
+<li><a href="#section-21">21. Contact and grievance redressal</a></li></ol></nav>
+<section id="section-1"><h2>1. About PDF PowerKit</h2><p>PDF PowerKit is an Android document utility application offering PDF creation, editing, conversion, scanning, compression, merging, splitting, page management, protection, unlocking, redaction, OCR, signatures, watermarks, and related document operations.</p><p>The application does not require an account. The developer does not operate a document-storage cloud, user-account database, or general-purpose backend server for processing your documents. The application does use third-party services, including Google services and YouTube, which may process information as described below.</p></section>
+<section id="section-2"><h2>2. Files you select, process, or create</h2><p>You may select PDFs, images, Word documents, and other supported files using Android file-access interfaces. PDF PowerKit is designed to process documents locally on your device and the developer does not intentionally upload document contents to a PDF PowerKit server.</p><p>Depending on the feature, the application may read selected files, create temporary processing files, generate output files, save outputs to a location you select (including Downloads), and maintain local metadata about generated files. Files saved outside the application's private storage remain subject to Android and the selected storage location.</p><p><strong>Please note:</strong> Local processing does not mean that no information ever leaves your device. Advertising, consent, scanning, update, embedded-video, and other third-party services may communicate with their providers.</p></section>
+<section id="section-3"><h2>3. Camera and document scanning</h2><p>PDF PowerKit may request camera permission for camera-based scanning. CameraX may capture images, which may be temporarily stored in application cache during processing. Camera access is used for requested scanning functionality and is not intentionally used for advertising.</p><p>The app also provides document scanning through Google's ML Kit Document Scanner via Google Play services. The scanner can produce PDF or image results. The developer does not operate its own server for storing scanned documents. Google-provided components remain subject to Google's terms and privacy practices.</p></section>
+<section id="section-4"><h2>4. OCR and text recognition</h2><p>PDF PowerKit includes Google ML Kit text-recognition libraries, including Latin and Devanagari recognition. When you use OCR, the selected or captured image is passed to on-device text-recognition functionality, designed to run locally. Temporary cached images may be created and are deleted where the relevant processing operation completes successfully.</p><p>The developer does not operate an OCR server or intentionally upload document contents to a PDF PowerKit server for OCR. Google-provided components remain subject to their applicable technical behaviour and privacy terms.</p></section>
+<section id="section-5"><h2>5. Advertising and Google Mobile Ads</h2><p>PDF PowerKit uses the Google Mobile Ads SDK (AdMob) to display advertisements. Depending on your device, Google's configuration, services used, consent choices, and applicable requirements, Google Mobile Ads may process IP address (which may estimate general location), device or advertising identifiers, ad impressions and clicks, diagnostics, crash and performance information, and information needed for advertising delivery, measurement, fraud prevention, and security.</p><p>The exact information processed may vary. PDF PowerKit does not intentionally send PDF, image, or Word document contents to Google Mobile Ads for advertising purposes. Google processes information under its own policies and terms.</p><ul><li><a href="https://policies.google.com/privacy">Google Privacy Policy</a></li><li><a href="https://support.google.com/admob/answer/6128543">Google AdMob data and privacy information</a></li></ul></section>
+<section id="section-6"><h2>6. Advertising consent and privacy choices</h2><p>PDF PowerKit uses Google's User Messaging Platform (UMP) to present and manage advertising-related consent choices where applicable. The options may vary by location, applicable requirements, Google's configuration, and available services.</p><p>Where available, the <strong>Advertising Privacy</strong> option in Settings may be used to review or change advertising privacy choices. These choices do not determine whether you can use core PDF-processing features. Google's processing remains governed by its policies and terms.</p></section>
+<section id="section-7"><h2>7. Local settings and generated-file history</h2><p>The app stores certain information locally, which may include theme and application preferences, advertising consent-related status, scanner and feature preferences, and other settings required for operation.</p><h3>Generated-file history</h3><p>The current implementation retains a maximum of <strong>200 history entries</strong>. An entry may contain the generated file name, feature used, Android file URI, and creation date and time. History stores metadata, not a second copy of the document. Deleting a history entry does not necessarily delete the actual output file; you may need to delete it separately through Android. Local settings and history are not maintained in a PDF PowerKit cloud account.</p></section>
+<section id="section-8"><h2>8. Private Vault</h2><p>The Private Vault allows you to import files into the application's private storage. A selected file is copied into application storage; file contents are encrypted using AES-GCM. Vault metadata may include original and encrypted file names, folder, MIME type, size, and creation date. A Vault PIN provides an additional in-app access control. Previewing or exporting an item may create a decrypted temporary copy.</p><p>Vault information is stored locally, not in a PDF PowerKit document cloud.</p><p><strong>Important security information:</strong> The current implementation stores Vault-related key material and the Vault PIN in app-private preferences. These are local application data, not credentials held by an online account. This should not be treated as equivalent to hardware-backed key storage or a professionally audited password-management system.</p><p>Temporary decrypted files may remain in application cache or in a destination application after previewing or sharing, depending on the operation and Android's behaviour. Shared files are subject to the receiving application's practices. Deleting Vault items removes corresponding entries and encrypted files where deletion succeeds. Uninstalling the app or clearing its data may permanently remove Vault data. Keep a separate secure copy of important files; do not use the Vault as the only copy.</p></section>
+<section id="section-9"><h2>9. Android backups and device transfers</h2><p>PDF PowerKit currently allows Android backup functionality. Depending on Android version, device and Google backup settings, and device-transfer configuration, some application data may be included in backups or device-to-device transfers. This may include preferences, history information, and files in application-private storage, including Vault-related data.</p><p>Android backup and device-transfer services are provided by Android, Google, or the device manufacturer, not the PDF PowerKit developer. Their handling is subject to the relevant provider's policies and settings. If you do not want application data included, review backup settings on your Android device. Disabling backup at device level may affect other apps. Take particular care when enabling backups and transfers because Vault data may be sensitive.</p></section>
+<section id="section-10"><h2>10. YouTube tutorials and embedded videos</h2><p>PDF PowerKit may display tutorials using an embedded YouTube player. When you open or play a video, YouTube and Google may receive information needed to load and play it, potentially including device, network, playback, and usage-related information. YouTube's own terms and privacy practices apply; the developer does not control its independent data collection or retention.</p><ul><li><a href="https://policies.google.com/privacy">Google Privacy Policy</a></li><li><a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a></li></ul></section>
+<section id="section-11"><h2>11. Google Play services and in-app updates</h2><p>The app uses Google Play services for certain features, including document scanning, and Google Play in-app update functionality where supported. Google Play services or Google Play may process technical information needed to provide these functions, such as app version, device and service information, and update-related information. Google's applicable terms and privacy practices apply.</p></section>
+<section id="section-12"><h2>12. Sharing files with other applications</h2><p>Some features allow you to share or open a document using another application. When you choose this option, the selected file may be passed through Android sharing or file-access mechanisms. The receiving application may copy, store, transmit, or otherwise process the file under its own policy and terms. PDF PowerKit does not control what another app does after you share a file. Only share documents with applications and recipients you trust.</p></section>
+<section id="section-13"><h2>13. Contact and support messages</h2><p>The app's contact or report-problem action may open an email composer. If you contact the developer, the developer may receive your email address and the information or attachments you choose to include. Support messages are used to respond to questions, investigate problems, and improve the app. Do not include passwords, payment details, or unnecessary sensitive information.</p></section>
+<section id="section-14"><h2>14. Information sharing and disclosure</h2><p>The developer does not operate a PDF PowerKit document cloud or user-account database and does not intentionally sell your documents. Information may nevertheless be processed by third parties when their services are used, including Google Mobile Ads and UMP (advertising and choices), Google ML Kit and Google Play services (scanning), Google Play (updates), YouTube and Google (embedded tutorials), an app you select when sharing a document, and your email provider when you contact the developer.</p><p>These providers act under their own terms, privacy policies, and legal obligations. Their practices are not controlled by the developer. The developer may also disclose information where required by applicable law or valid legal process.</p></section>
+<section id="section-15"><h2>15. Data retention and deletion</h2><p>The developer does not maintain a user account containing your documents. Files saved to your chosen location remain until you delete or move them. Generated history is stored locally and currently retains up to 200 entries. Local settings and history may be removed by clearing app data or using relevant in-app controls where available. Deleting a history entry does not necessarily delete the generated document. Vault items remain until deleted through the Vault or until application data is removed.</p><p>Temporary files are deleted where cleanup is implemented and succeeds; Android may clear cache according to its normal behaviour. A receiving app may retain a shared temporary file. Third parties' retention is governed by their own policies and legal obligations. Data included in Android backups or device transfers may remain subject to the backup provider's retention and deletion processes.</p><p>Uninstalling PDF PowerKit or clearing application data may remove locally stored app information, but does not necessarily remove files saved separately in Downloads, files shared with another app, or information held by third parties.</p></section>
+<section id="section-16"><h2>16. Data security</h2><p>PDF PowerKit uses Android application storage and file-access mechanisms and encryption for files stored in the Private Vault. Security also depends on your device, Android version, device lock, backup configuration, other installed apps, and services you choose to use. No application, device, storage system, or transmission method can be guaranteed completely secure.</p><ul><li>Keep your device and operating system updated.</li><li>Use a secure device lock.</li><li>Avoid sharing sensitive documents with untrusted apps.</li><li>Take care when enabling device backups.</li><li>Keep separate secure copies of important documents.</li><li>Do not rely on the Private Vault as the only copy of important information.</li></ul></section>
+<section id="section-17"><h2>17. Your privacy rights and requests</h2><p>Depending on applicable law, including India's Digital Personal Data Protection Act, 2023 and rules brought into force under it, you may have rights relating to personal data processed in connection with PDF PowerKit. These may include requesting information about personal data processed by the developer; requesting correction or updating; requesting erasure where applicable; withdrawing consent where processing is based on consent; raising a grievance; and exercising other rights available under applicable law, including nomination where applicable.</p><p>Because the app does not require an account and most document operations are designed to take place locally, the developer may not possess the document or local application data you ask about. For data held by Google, YouTube, your email provider, Android backup services, or another third party, you may need to exercise rights directly with that provider.</p><p>To submit a privacy request or grievance, email <a href="mailto:arvind.mns18@gmail.com">arvind.mns18@gmail.com</a>. Describe your request clearly, but do not send passwords, complete identity documents, or unnecessary sensitive information. The developer will review and respond in accordance with applicable law. If dissatisfied, you may use further complaint or appeal mechanisms available under applicable law, including the Data Protection Board of India when the relevant statutory process is in force.</p></section>
+<section id="section-18"><h2>18. Children&#x27;s privacy</h2><p>PDF PowerKit is not specifically designed or marketed as an application for children. The app does not require an account or personal information to use its core PDF tools. The developer does not knowingly request children to provide personal information directly through the app.</p><p>Where applicable law requires verifiable parental consent or restricts processing of children's personal data, those requirements must be followed. Parents or guardians who believe a child has provided personal information directly to the developer may contact <a href="mailto:arvind.mns18@gmail.com">arvind.mns18@gmail.com</a>.</p></section>
+<section id="section-19"><h2>19. Third-party software and open-source components</h2><p>PDF PowerKit uses third-party software libraries and services to provide certain features. These components may have their own licences, terms, and privacy practices. The relevant providers' policies apply to information they process through their services. The app does not control independent changes to those providers' services or policies.</p></section>
+<section id="section-20"><h2>20. Changes to this Privacy Policy</h2><p>This policy may be updated when application features, data practices, third-party services, or legal requirements change. The revised policy will be published with an updated effective date. Review this page periodically to stay informed about how PDF PowerKit handles information.</p></section>
+<section id="section-21"><h2>21. Contact and grievance redressal</h2><p>For privacy questions, requests, complaints, or grievances concerning PDF PowerKit, contact:</p><p><strong>Email:</strong> <a href="mailto:arvind.mns18@gmail.com">arvind.mns18@gmail.com</a><br><strong>Application:</strong> PDF PowerKit for Android</p><p>Please use the subject line <strong>“PDF PowerKit – Privacy Request”</strong> or <strong>“PDF PowerKit – Privacy Grievance”</strong> so your message can be identified and reviewed appropriately.</p></section>
+</main>
+<footer><p>© 2026 PDF PowerKit. This page describes the privacy practices stated in this policy.</p></footer>
+</body></html>
