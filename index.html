@@ -131,10 +131,10 @@ footer{padding:0 20px 30px;color:var(--muted);font-size:.9rem;text-align:center}
 <h2>8. Private Vault</h2>
 <p>The Private Vault allows you to import files into the application's private storage. Vault files are encrypted using AES-256-GCM. The app uses a randomly generated AES-256 master encryption key to encrypt and decrypt Vault files.</p>
 <p>The master encryption key is protected by a separate AES-GCM wrapping key managed by Android Keystore. The wrapped master key is stored in the app's private SharedPreferences, while the wrapping key is managed by Android Keystore. This arrangement helps protect the master encryption key while preserving access to existing encrypted Vault files.</p>
+<p>If Android Keystore is reset or the wrapping key becomes unavailable on your device, Vault files may become permanently unreadable.</p>  
 <h3>Vault PIN and biometric authentication</h3>
 <p>Users can create a 4–6 digit PIN to control access to the Private Vault. The PIN is stored in the application's private SharedPreferences and is used by the app to verify access. The PIN is separate from the encryption key and is not used to derive the Vault's encryption key.</p>
 <p>PDF PowerKit may also offer fingerprint or other supported biometric authentication to unlock the Private Vault. Biometric verification is handled by Android and the device's biometric system. PDF PowerKit does not access or store fingerprint images, face images, or biometric templates. The app receives the authentication result from Android. Users can use their Vault PIN when biometric authentication is unavailable.</p>
-<p>If Android Keystore is reset or the wrapping key becomes unavailable on your device, Vault files may become permanently unreadable.</p>  
 <h3>Vault storage and temporary files</h3>
 <p>Vault files and related metadata are stored locally in the application's private storage, not in a PDF PowerKit document cloud. Metadata may include original and encrypted file names, folder, MIME type, size, and creation date.</p>
 <p>When a file is imported, a temporary copy may be created during processing and is deleted after a successful import. When you export a Vault file, the app temporarily decrypts it for the export operation and attempts to delete that temporary export file after the operation completes.</p>
